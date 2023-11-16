@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <link rel="shortcut icon" href="ilu.png">
+        <title>NOW!!!</title>
+        <style> 
+            body{
+                background-image: url("fondo.png");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+
+            .titulo{
+                background-color: black;
+                text-align: center;
+            }
+
+
+           
+
+            .i{
+                background-color: black;
+                color: white;
+                text-align: left;
+                width: 10%;
+                height: 100%;
+                float: left;
+                list-style-type: none; 
+                padding-bottom: 20px;
+            }
+
+            .menu{
+                display: block;
+                text-align: left;
+                width: 40%;
+                float: right;
+                list-style-type: none;
+                margin-right: 50%;
+            }
+
+            .musica{
+                position: fixed;
+                right: 20px;    
+                bottom: 20px;
+            }
+
+            .popup{
+                position: fixed;
+                right: 20px;    
+                top: 200px;
+                
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!--TITULO DE FUEGO-->
+        <div class="titulo">
+            <img src="ct.gif" width="100%" height="200" alt="MY WEB" /></a>
+        </div>
+        <!-- INDICE DE LA IZQUIERDA-->
+        <div class="i">
+            <nav>
+                <ul>
+                    <li style="line-height: 2;"><a href="index.html" style="color: white;">البدء</a></li>
+                    <li style="line-height: 2;"><a href="#" style="color: white;">ثانية</a></li>
+                    <li style="line-height: 2;"><a href="#" style="color: white;">اثالث</a></li>
+                    <li style="line-height: 2;"><a href="#" style="color: white;">غرفة</a></li>
+                    <li style="line-height: 2;"><a href="#" style="color: white;">كراث</a></li>
+                    <li style="line-height: 2;"><a href="#" style="color: white;">سنجاب</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- MENU MUY LOCO-->
+        <div class="menu">
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=ijL7h5m13L0"><img src="S.gif"></a></li>
+                <li><a href="#"><img src="wiz.gif" width="310"></a> </li>
+                <li><a href="https://www.arngren.net"><img src="Drugs.gif" width="310"></a></li>
+                <li><a href="#"><img src="mar.gif" width="350"></a> </li>
+            </ul>
+        </div>
+        <!--AUDIO DE FONDO-->
+        <div class="musica">
+            <img src="text.gif" width="400px">
+            <button class="reproductor"><img src="m.gif" width="50"></button>
+                <script>
+                    let boton = document.querySelector(".reproductor")
+
+                    boton.addEventListener("click", () => {
+                        let etiquetaAudio = document.createElement("audio")
+                        etiquetaAudio.setAttribute("src", "music.mp3")
+                        etiquetaAudio.play()
+                    })
+                </script>
+        </div>
+        <!--POPUPS-->
+        <div class="popup">
+        <a href="https://i.ytimg.com/vi/PSaHM0zzIR4/hq2.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAQxm7h6jfMdMUgmD4R2zN09AcumQ"> 
+            <img src="opoup.jpg" width="200px">
+        </div>
+    </body>
+</html>
